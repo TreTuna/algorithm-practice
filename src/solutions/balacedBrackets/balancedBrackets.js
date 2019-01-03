@@ -1,4 +1,4 @@
-export const isBalanced = str => {
+export function isBalanced(str) {
   const currentOpen = [];
   const pairs = {
     "(": ")",
@@ -25,4 +25,4 @@ export const isBalanced = str => {
     return false;
   }
   return true;
-};
+}

@@ -1,4 +1,4 @@
-const binarySearch = (array, target) => {
+export function binarySearch(array, target) {
   const subRt = (low, high) => {
     const mid = Math.floor((high - low) / 2) + low;
     if (array[mid] === target) {
