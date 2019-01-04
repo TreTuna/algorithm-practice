@@ -1,4 +1,4 @@
-export function swap(a, b, array) {
+function swap(a, b, array) {
   const temp = array[a];
   array[a] = array[b];
   array[b] = temp;

@@ -104,7 +104,6 @@ describe("shuffleDeck", function() {
     let margin = 52 * 10;
     expect(chi2).toBeGreaterThanOrEqual(target - margin);
     expect(chi2).toBeLessThanOrEqual(target + margin);
-    return chi2;
   });
 
   it("EXTRA CREDIT (jk, this was mandatory): for large N, should not have any bias from a uniform distribution", function() {

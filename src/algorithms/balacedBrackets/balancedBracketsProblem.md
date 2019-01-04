@@ -1,17 +1,17 @@
 Balanced Brackets
 Given a string, return true if it contains all balanced parenthesis (), curly-brackets {}, and square-brackets [].
 
-  Examples
-Input	Output
+Examples
+Input Output
 str:
-  "(x + y) - (4)"	true
+"(x + y) - (4)" true
 str:
-  "(x + y) - (4)"	true
+"(x + y) - (4)" true
 str:
-  "(((10 ) ()) ((?)(:)))"	true
+"(((10 ) ()) ((?)(:)))" true
 str:
-  "[{()}]"	true
+"[{()}]" true
 str:
-  "(50)("	false
+"(50)(" false
 str:
-  "[{]}"	false
+"[{]}" false
