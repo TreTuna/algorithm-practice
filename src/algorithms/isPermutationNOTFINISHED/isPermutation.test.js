@@ -1,11 +1,11 @@
-import { isPermuatation } from "./isPermuatation";
+import { isPermutation } from "./isPermutation";
 
-describe("isPermuatation", () => {
-  it("should exist", function() {
-    expect(isPermuatation).toBeDefined();
+describe.skip("isPermutation", () => {
+  it("should exist", function () {
+    expect(isPermutation).toBeDefined();
   });
 
-  it("should be a function", function() {
-    expect(typeof isPermuatation).toBe("function");
+  it("should be a function", function () {
+    expect(typeof isPermutation).toBe("function");
   });
 });
