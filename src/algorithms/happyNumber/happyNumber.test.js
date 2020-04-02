@@ -1,24 +1,31 @@
-import { happyNumber } from "./happyNumber";
+import { isHappy } from "./happyNumber";
 
-describe("happyNumber", function () {
+describe("isHappy", function () {
   it("should exist", function () {
-    expect(happyNumber).toBeDefined();
+    expect(isHappy).toBeDefined();
   });
 
   it("should be a function", function () {
-    expect(typeof happyNumber).toBe("function");
+    expect(typeof isHappy).toBe("function");
   });
 
   it("should return the array of characters reversed", function () {
     const input = 19;
-    expect(happyNumber(input)).toBeTruthy();
+    expect(isHappy(input)).toBeTruthy();
   });
+
   it("should return the array of characters reversed", function () {
     const input = 1;
-    expect(happyNumber(input)).toBeTruthy();
+    expect(isHappy(input)).toBeTruthy();
   });
+
   it("should return the array of characters reversed", function () {
     const input = 29;
-    expect(happyNumber(input)).toBeFalsy();
+    expect(isHappy(input)).toBeFalsy();
+  });
+
+  it("should return the array of characters reversed", function () {
+    const input = 7;
+    expect(isHappy(input)).toBeFalsy();
   });
 });

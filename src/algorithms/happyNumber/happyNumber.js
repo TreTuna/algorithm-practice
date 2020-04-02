@@ -4,7 +4,7 @@
  * @return {boolean}
  */
 
-export function happyNumber(num) {
+export function isHappy(num) {
   if (num === 1) {
     return true;
   }
@@ -27,5 +27,8 @@ function addDigits(num) {
   return num
     .toString()
     .split("")
-    .reduce((acc, num) => parseInt(num) + acc, 0);
+    .reduce((acc, num) => {
+      const numSq = num * num;
+      return numSq + acc;
+    }, 0);
 }
