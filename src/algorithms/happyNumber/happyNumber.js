@@ -27,8 +27,5 @@ function addDigits(num) {
   return num
     .toString()
     .split("")
-    .reduce((acc, num) => {
-      const numSq = num * num;
-      return numSq + acc;
-    }, 0);
+    .reduce((acc, num) => Math.pow(num, 2) + acc, 0);
 }

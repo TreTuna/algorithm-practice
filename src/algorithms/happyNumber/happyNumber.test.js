@@ -26,6 +26,6 @@ describe("isHappy", function () {
 
   it("should return the array of characters reversed", function () {
     const input = 7;
-    expect(isHappy(input)).toBeFalsy();
+    expect(isHappy(input)).toBeTruthy();
   });
 });
