@@ -1,12 +1,12 @@
-import { numIslands } from "./numIslands";
+import { minPathSum } from "./minPathSum";
 
-describe("numIslands", function () {
+describe.skip("minPathSum", function () {
   it("should exist", function () {
-    expect(numIslands).toBeDefined();
+    expect(minPathSum).toBeDefined();
   });
 
   it("should be a function", function () {
-    expect(typeof numIslands).toBe("function");
+    expect(typeof minPathSum).toBe("function");
   });
 
   it.skip("should return the proper number of islands", function () {
@@ -17,7 +17,7 @@ describe("numIslands", function () {
       ["0", "0", "0", "0", "0"],
     ];
     const output = 1;
-    expect(numIslands(input)).toStrictEqual(output);
+    expect(minPathSum(input)).toStrictEqual(output);
   });
   it("should return the proper number of islands", function () {
     const input = [
@@ -27,12 +27,12 @@ describe("numIslands", function () {
       ["0", "0", "0", "1", "1"],
     ];
     const output = 3;
-    expect(numIslands(input)).toStrictEqual(output);
+    expect(minPathSum(input)).toStrictEqual(output);
   });
 
   it.skip("should return the proper number of islands", function () {
     const input = [["1", "1"]];
     const output = 1;
-    expect(numIslands(input)).toStrictEqual(output);
+    expect(minPathSum(input)).toStrictEqual(output);
   });
 });

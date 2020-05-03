@@ -1,16 +1,16 @@
-import { wordCloud } from "./wordCloud";
+import { productExceptSelf } from "./productExceptSelf";
 
 describe("inFlightMovies", function () {
   it("should exist", function () {
-    expect(wordCloud).toBeDefined();
+    expect(productExceptSelf).toBeDefined();
   });
 
   it("should be a function", function () {
-    expect(typeof wordCloud).toBe("function");
+    expect(typeof productExceptSelf).toBe("function");
   });
 
   it("palindrome is true", function () {
     const str = "civic";
-    expect(wordCloud(str)).toBeTruthy();
+    expect(productExceptSelf(str)).toBeTruthy();
   });
 });
